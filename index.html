@@ -106,7 +106,7 @@
 <div class="container">
 
 <h2>Wybierz wyniki finałowego wyścigu</h2>
-<p>Symuluj końcową klasyfikację Mistrzostw Świata F1 2025. System tie-break: <b>P1 → P20</b> zgodnie z regulaminem FIA.</p>
+<p>Symuluj końcową klasyfikację Mistrzostw Świata F1 2025.</p>
 
 <table>
 <thead>
@@ -129,6 +129,8 @@ Zwycięzca mistrzostw: <span id="champ">(wybierz wyniki)</span>
 
 <div class="footer">
     MK Racing Lab © 2025
+    IG: mkracinglab
+    FB: MK Racing Lab
 </div>
 
 </div>
@@ -246,7 +248,7 @@ function update() {
             tieBox.innerHTML = `<div class="tie">Nierozstrzygnięty remis pomiędzy: ${equals.map(e=>e.name).join(", ")}</div>`;
         }
     } else {
-        notes.textContent = "Brak remisu. Zwycięzca wyłoniony punktami.";
+        notes.textContent = "Zwycięzca wyłoniony punktami.";
         champ.textContent = rows[0].name;
     }
 }
